@@ -1,0 +1,29 @@
+<table>
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>&nbsp;</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each contacts}}
+      {{ view App.ShowContactView contactBinding="this" }}
+    {{/each}}
+
+    {{#if isNewVisible}}
+      <tr>
+        <td>*</td>
+        <td>
+          {{ view App.NewContactView }}
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    {{/if}}
+  </tbody>
+</table>
+
+<div class="commands">
+  <a href="#" {{action "showNew"}}>New Contact</a>
+</div>

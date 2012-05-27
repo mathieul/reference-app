@@ -1,5 +1,6 @@
 //= require jquery
 //= require ember
+//= require ember-rest
 //= require app/app
 //= require_tree ./app/models
 //= require_tree ./app/controllers
