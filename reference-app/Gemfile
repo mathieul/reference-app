@@ -15,7 +15,8 @@ group :assets do
   gem 'bootstrap-sass',  '~> 2.0.2'
   gem 'compass-rails',   '~> 1.0.1'
   gem 'uglifier',        '~> 1.2.4'
-  gem 'ember-rails',     '~> 0.5.0'
+  gem 'jquery-rails',    '~> 2.0.2'
+  gem 'ember-rails',     github: 'emberjs/ember-rails', ref: '41e09b4e3869aade5a79883bdf6d8392d2fce9d3'
 end
 
 group :test, :development do
