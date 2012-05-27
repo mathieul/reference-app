@@ -18,13 +18,13 @@ development:
   database: reference-app_development
   pool: 5
   username: reference-app
-  password:
+  password: matrix00
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  #host: localhost
-  #port: 5432
+  host: localhost
+  port: 5432
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -44,7 +44,9 @@ test:
   database: reference-app_test
   pool: 5
   username: reference-app
-  password:
+  password: matrix00
+  host: localhost
+  port: 5432
 
 production:
   adapter: postgresql
