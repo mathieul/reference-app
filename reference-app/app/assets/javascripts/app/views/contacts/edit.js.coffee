@@ -3,7 +3,8 @@ App.EditContactView = Ember.View.extend
   templateName:  'app/templates/contacts/edit'
 
   didInsertElement: ->
-    @transaction = App.store.transaction()
+    store = App.stateManager.get('store')
+    @transaction = store.transaction()
     @transaction.add(@get('contact'))
     @_super()
     @$('input:first').focus()

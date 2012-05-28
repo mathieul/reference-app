@@ -4,7 +4,8 @@ App.NewContactView = Ember.View.extend
 
   init: ->
     @_super()
-    @transaction = App.store.transaction()
+    store = App.stateManager.get('store')
+    @transaction = store.transaction()
     @set('contact', @transaction.createRecord(App.Contact, {}))
 
   didInsertElement: ->

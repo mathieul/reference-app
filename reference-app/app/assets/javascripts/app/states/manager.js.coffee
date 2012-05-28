@@ -4,8 +4,7 @@ App.StateManager = Ember.StateManager.extend
   states:
     bootstrap: Ember.State.extend
       ready: (manager) ->
-        # put your bootstrap logic here
         store = DS.Store.create
-          adapter: DS.RESTAdapter.create()
           revision: 4
+          adapter: DS.RESTAdapter.create(bulkCommmit: false)
         manager.set('store', store)

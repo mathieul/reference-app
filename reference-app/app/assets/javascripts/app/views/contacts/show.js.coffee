@@ -14,4 +14,4 @@ App.ShowContactView = Ember.View.extend
     event.preventDefault()
     contact = @get('contact')
     contact.deleteRecord()
-    App.store.commit()
+    App.stateManager.get('store').commit()
