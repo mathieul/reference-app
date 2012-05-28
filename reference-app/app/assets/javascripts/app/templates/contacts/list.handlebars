@@ -3,7 +3,6 @@
     <tr>
       <td>ID</td>
       <td>Name</td>
-      <td>&nbsp;</td>
     </tr>
   </thead>
 
@@ -17,10 +16,7 @@
     {{#if isNewVisible}}
       <tr>
         <td>*</td>
-        <td>
-          {{ view App.NewContactView }}
-        </td>
-        <td>&nbsp;</td>
+        <td>{{view App.NewContactView}}</td>
       </tr>
     {{/if}}
   </tbody>
