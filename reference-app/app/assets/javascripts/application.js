@@ -1,4 +1,10 @@
 //= require jquery
+//= require bootstrap-transition
+//= require bootstrap-alert
+//= require bootstrap-button
+//= require bootstrap-dropdown
+//= require bootstrap-tab
+//= require bootstrap-typeahead
 //= require ember
 //= require ember-data
 //= require app/app

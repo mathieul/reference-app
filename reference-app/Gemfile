@@ -10,12 +10,13 @@ gem 'rails-api'
 gem 'pg'
 
 group :assets do
-  gem 'sass-rails',      '~> 3.2.5'
-  gem 'coffee-rails',    '~> 3.2.2'
-  gem 'bootstrap-sass',  '~> 2.0.2'
-  gem 'compass-rails',   '~> 1.0.1'
-  gem 'uglifier',        '~> 1.2.4'
-  gem 'jquery-rails',    '~> 2.0.2'
+  gem 'sass-rails',        '~> 3.2.5'
+  gem 'coffee-rails',      '~> 3.2.2'
+  gem 'bootstrap-sass',    '~> 2.0.2'
+  gem 'bootswatch-rails',  '~> 0.0.11'
+  gem 'compass-rails',     '~> 1.0.1'
+  gem 'uglifier',          '~> 1.2.4'
+  gem 'jquery-rails',      '~> 2.0.2'
   gem 'active_model_serializers',
     github: 'teeparham/active_model_serializers',
     ref: '7f64867f61980b491929fdb881d7b5bc475e0e4f'
