@@ -8,6 +8,14 @@ GIT
       execjs (>= 1.2)
       railties (~> 3.1)
 
+GIT
+  remote: git://github.com/teeparham/active_model_serializers.git
+  revision: 7f64867f61980b491929fdb881d7b5bc475e0e4f
+  ref: 7f64867f61980b491929fdb881d7b5bc475e0e4f
+  specs:
+    active_model_serializers (0.5.0)
+      activemodel (~> 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -24,8 +32,6 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.1.2)
-    active_model_serializers (0.5.1)
-      activemodel (~> 3.0)
     activemodel (3.2.3)
       activesupport (= 3.2.3)
       builder (~> 3.0.0)
@@ -144,6 +150,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers!
   bootstrap-sass (~> 2.0.2)
   coffee-rails (~> 3.2.2)
   compass-rails (~> 1.0.1)

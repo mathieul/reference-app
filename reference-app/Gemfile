@@ -16,6 +16,7 @@ group :assets do
   gem 'compass-rails',   '~> 1.0.1'
   gem 'uglifier',        '~> 1.2.4'
   gem 'jquery-rails',    '~> 2.0.2'
+  gem 'active_model_serializers',     github: 'teeparham/active_model_serializers', ref: '7f64867f61980b491929fdb881d7b5bc475e0e4f'
   gem 'ember-rails',     github: 'emberjs/ember-rails', ref: '41e09b4e3869aade5a79883bdf6d8392d2fce9d3'
 end
 
