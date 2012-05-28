@@ -1,25 +1,25 @@
 class ContactsController < ApplicationController
   def index
     contacts = Contact.scoped
-    render json: contacts, root: false
+    render json: contacts
   end
 
   def show
     contact = Contact.find(params[:id])
-    render json: contact, root: false
+    render json: contact
   end
 
   def new
     contact = Contact.new
-    render json: contact, root: false
+    render json: contact
   end
 
   def create
     contact = Contact.new(params[:contact])
     if contact.save
-      render json: contact, status: :created, location: contact, root: false
+      render json: contact, status: :created, location: contact
     else
-      render json: contact.errors, status: :unprocessable_entity, root: false
+      render json: contact.errors, status: :unprocessable_entity
     end
   end
 
@@ -28,7 +28,7 @@ class ContactsController < ApplicationController
     if contact.update_attributes(params[:contact])
       head :no_content
     else
-      render json: contact.errors, status: :unprocessable_entity, root: false
+      render json: contact.errors, status: :unprocessable_entity
     end
   end
 
