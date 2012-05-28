@@ -3,22 +3,19 @@ App.ShowContactView = Ember.View.extend
   classNames: ['show-contact']
   tagName: 'tr'
 
-  doubleClick: ->
+  doubleClick: (event) ->
+    event.preventDefault()
     @showEdit()
-    false
 
-  showEdit: ->
+  showEdit: (event) ->
+    event.preventDefault()
     @set('isEditing', true)
 
   hideEdit: ->
     @set('isEditing', false)
 
-  destroyRecord: ->
+  destroyRecord: (event) ->
+    event.preventDefault()
     contact = @get('contact')
     contact.deleteRecord()
     App.store.commit()
-
-    # contact
-    #   .destroyResource()
-    #   .fail((error) -> App.displayError(error))
-    #   .done(-> App.contactsController.removeObject(contact))

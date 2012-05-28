@@ -8,7 +8,8 @@ App.EditContactView = Ember.View.extend
     @_super()
     @$('input:first').focus()
 
-  cancelForm: ->
+  cancelForm: (event) ->
+    event.preventDefault()
     @transaction.rollback()
     @get('parentView').hideEdit()
 
@@ -23,12 +24,3 @@ App.EditContactView = Ember.View.extend
     else
       @transaction.commit()
       @get('parentView').hideEdit()
-
-    # contact
-    #   .saveResource()
-    #   .fail((error) -> App.displayError(error))
-    #   .done(=>
-    #     parentView = @get('parentView')
-    #     parentView.get('contact').duplicateProperties(contact)
-    #     parentView.hideEdit()
-    #   )

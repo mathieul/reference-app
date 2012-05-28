@@ -11,7 +11,8 @@ App.NewContactView = Ember.View.extend
     @_super()
     @$('input:first').focus()
 
-  cancelForm: ->
+  cancelForm: (event) ->
+    event.preventDefault()
     @transaction.rollback()
     @get('parentView').hideNew()
 
@@ -26,11 +27,3 @@ App.NewContactView = Ember.View.extend
     else
       @transaction.commit()
       @get('parentView').hideNew()
-
-    # contact
-    #   .saveResource()
-    #   .fail((error) -> App.displayError(error))
-    #   .done(=>
-    #     App.contactsController.pushObject(contact)
-    #     @get('parentView').hideNew()
-    #   )
