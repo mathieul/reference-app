@@ -2,7 +2,7 @@
   <td>{{contact.id}}</td>
   <td class="data">
     {{#if isEditing}}
-      {{view App.EditContactView}}
+      {{view App.EditContactView contactBinding="contact"}}
     {{else}}
       {{contact.fullName}}
     {{/if}}

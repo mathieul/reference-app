@@ -5,6 +5,7 @@ App.ShowContactView = Ember.View.extend
 
   doubleClick: ->
     @showEdit()
+    false
 
   showEdit: ->
     @set('isEditing', true)
@@ -14,7 +15,10 @@ App.ShowContactView = Ember.View.extend
 
   destroyRecord: ->
     contact = @get('contact')
-    contact
-      .destroyResource()
-      .fail((error) -> App.displayError(error))
-      .done(-> App.contactsController.removeObject(contact))
+    contact.deleteRecord()
+    App.store.commit()
+
+    # contact
+    #   .destroyResource()
+    #   .fail((error) -> App.displayError(error))
+    #   .done(-> App.contactsController.removeObject(contact))
