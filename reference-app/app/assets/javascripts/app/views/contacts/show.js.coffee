@@ -3,7 +3,8 @@ App.ShowContactView = Ember.View.extend
   classNames: ['show-contact']
   tagName: 'tr'
 
-  doubleClick: -> @showEdit()
+  doubleClick: ->
+    @showEdit()
 
   showEdit: ->
     @set('isEditing', true)
