@@ -6,8 +6,9 @@
     {{else}}
       {{contact.fullName}}
       <div class="commands">
-        <a href="#" {{action "showEdit"}}>Edit</a>
-        <a href="#" {{action "destroyRecord"}}>Remove</a>
+        <a href="#" class="btn" {{action "showEdit"}}>Edit</a>
+        &nbsp;
+        <a href="#" class="btn btn-danger" {{action "destroyRecord"}}>Remove</a>
       </div>
     {{/if}}
   </td>

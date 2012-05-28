@@ -11,7 +11,9 @@
           <div class="container">
             <a href="javascript:void(0)" class="brand">Reference App</a>
             <div class="nav-collapse">
-              {{view App.MenuView}}
+              <script type="text/x-handlebars">
+                {{view App.MenuView}}
+              </script>
             </div>
           </div>
         </div>
@@ -19,6 +21,10 @@
     </header>
 
     <div class="container master-container">
+      <script type="text/x-handlebars">
+        {{view App.BreadcrumbView}}
+      </script>
+
       <div class="page-header">
         <h1>Contacts</h1>
       </div>
