@@ -1,4 +1,17 @@
-<table>
+<p>
+  <a href="#" class="btn btn-success" {{action "showNew"}}>
+    <i class="icon icon-plus"></i>
+    New Contact
+  </a>
+  <a href="#" class="btn" {{action "refreshListing"}}>
+    <i class="icon icon-refresh"></i>
+    Refresh List
+  </a>
+</p>
+
+<br />
+
+<table class="table table-striped">
   <thead>
     <tr>
       <td>ID</td>
@@ -21,8 +34,3 @@
     {{/if}}
   </tbody>
 </table>
-
-<div class="commands">
-  <a href="#" {{action "showNew"}}>New Contact</a>
-  <a href="#" {{action "refreshListing"}}>Refresh List</a>
-</div>
