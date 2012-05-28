@@ -1,4 +1,4 @@
-App.contactsController = Em.ArrayController.create
+App.contactsController = Ember.ArrayController.create
   loadAll: (data) ->
     store = App.stateManager.get('store')
     result = store.loadMany(App.Contact, data.contacts)
