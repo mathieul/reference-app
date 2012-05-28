@@ -3,6 +3,6 @@ class MainController < ActionController::Base
 
   def index
     contacts = Contact.all
-    @contacts = contacts.active_model_serializer.new(contacts)
+    @contacts = contacts.active_model_serializer.new(contacts, root: 'contacts')
   end
 end

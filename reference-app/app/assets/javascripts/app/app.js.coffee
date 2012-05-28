@@ -1,3 +1,6 @@
+Ember.CP_DEFAULT_CACHEABLE   = true
+Ember.VIEW_PRESERVES_CONTEXT = true
+
 window.App = App = Ember.Application.create()
 
 App.store = DS.Store.create
