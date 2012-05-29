@@ -5,7 +5,6 @@ gem 'rails-api'
 
 gem 'pg'
 gem 'netflix'
-gem 'rotten-tomatoes'
 
 group :assets do
   gem 'sass-rails',        '~> 3.2.5'
