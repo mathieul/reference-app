@@ -2,13 +2,13 @@ App.ListContactsView = Ember.View.extend
   templateName: 'app/templates/contacts/list'
   contactsBinding: 'App.contactsController'
 
-  showNew: (event) ->
-    event.preventDefault()
+  showNew: ->
     @set('isNewVisible', true)
+    false
 
   hideNew: ->
     @set('isNewVisible', false)
 
-  refreshListing: (event) ->
-    event.preventDefault()
+  refreshListing: ->
     App.contactsController.findAll()
+    false

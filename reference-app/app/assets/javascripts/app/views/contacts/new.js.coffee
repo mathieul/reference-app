@@ -12,14 +12,12 @@ App.NewContactView = Ember.View.extend
     @_super()
     @$('input:first').focus()
 
-  cancelForm: (event) ->
-    event.preventDefault()
+  cancelForm: ->
     @transaction.rollback()
     @get('parentView').hideNew()
+    false
 
-  submit: (event) ->
-    event.preventDefault()
-
+  submit: ->
     contact = @get('contact')
     validationErrors = contact.validate()
 
@@ -28,3 +26,4 @@ App.NewContactView = Ember.View.extend
     else
       @transaction.commit()
       @get('parentView').hideNew()
+    false
