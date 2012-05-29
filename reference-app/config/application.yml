@@ -1,0 +1,12 @@
+common: &common
+  netflix_key: "9bdur3sukahmnwcwf3k3apav"
+  netflix_secret: "hY6FdJREWF"
+
+development:
+  <<: *common
+
+test:
+  <<: *common
+
+production:
+  <<: *common

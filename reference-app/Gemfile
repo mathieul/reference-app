@@ -1,13 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'rails-api'
 
 gem 'pg'
+gem 'netflix'
+gem 'rotten-tomatoes'
 
 group :assets do
   gem 'sass-rails',        '~> 3.2.5'
