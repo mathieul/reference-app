@@ -8,9 +8,8 @@ class RottenTomatoesMovie
 
   def self.search(name)
     response = get('/movies.json', query: {q: name, page_limit: 50, page: 1})
-    result = response.to_hash
-    return [] if result['total'] == 0
-    result['movies'].map { |raw| new(raw) }
+    return [] if response.fetch('total', 0) == 0
+    response['movies'].map { |raw| new(raw) }
   end
 
   def initialize(raw)
