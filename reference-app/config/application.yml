@@ -1,7 +1,7 @@
 common: &common
   netflix_key: "9bdur3sukahmnwcwf3k3apav"
   netflix_secret: "hY6FdJREWF"
-  rottentomatoes_key: "9dyme5vu5j487tb22bctmy5c"
+  rotten_tomatoes_key: "9dyme5vu5j487tb22bctmy5c"
 
 development:
   <<: *common

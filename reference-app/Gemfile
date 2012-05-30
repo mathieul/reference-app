@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.3'
-gem 'rails-api'
+gem 'rails',      '3.2.3'
+gem 'rails-api',  '0.0.1'
 
-gem 'pg'
-gem 'netflix'
+gem 'pg',         '0.13.2'
+gem 'netflix',    '0.2.1'
+gem 'httparty',   '0.8.3'
 
 group :assets do
   gem 'sass-rails',        '~> 3.2.5'
