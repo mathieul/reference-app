@@ -10,7 +10,7 @@ gem 'httparty',   '0.8.3'
 group :assets do
   gem 'sass-rails',        '~> 3.2.5'
   gem 'coffee-rails',      '~> 3.2.2'
-  gem 'bootstrap-sass',    '~> 2.0.2'
+  gem 'bootstrap-sass',    '~> 2.0.3.1'
   gem 'bootswatch-rails',  '~> 0.0.11'
   gem 'compass-rails',     '~> 1.0.1'
   gem 'uglifier',          '~> 1.2.4'
@@ -20,7 +20,7 @@ group :assets do
     ref: '7f64867f61980b491929fdb881d7b5bc475e0e4f'
   gem 'ember-rails',
     github: 'emberjs/ember-rails',
-    ref: '41e09b4e3869aade5a79883bdf6d8392d2fce9d3'
+    ref: '84a3f90ec2d62c0b32f23ecdafa214fecf1579b1'
 end
 
 group :test, :development do
